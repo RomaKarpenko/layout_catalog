@@ -1,0 +1,8 @@
+.main {
+  width: 944px;
+  height: 862px;
+  margin: 50px auto;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  grid-gap: 46px 48px;
+}
