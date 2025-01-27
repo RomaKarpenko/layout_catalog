@@ -12,15 +12,14 @@ $white-color: rgb(255, 255, 255);
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
-  background-color: rgba(255, 255, 255, 1);
 
-  &_image {
+  &__image {
     display: block;
     width: 160px;
     height: 134px;
   }
 
-  &_product {
+  &__product {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,18 +27,18 @@ $white-color: rgb(255, 255, 255);
     padding: 32px 16px 16px;
   }
 
-  &_content {
+  &__content {
     margin-top: 40px;
   }
 
-  &_reviews {
+  &__reviews {
     font-size: 10px;
     line-height: 14px;
     color: $dark-blue-color;
     margin: 0;
   }
 
-  &_name {
+  &__name {
     margin: 0;
     margin-bottom: 4px;
     color: $dark-blue-color;
@@ -48,7 +47,7 @@ $white-color: rgb(255, 255, 255);
     line-height: 18px;
   }
 
-  &_code {
+  &__code {
     margin: 0;
     margin-bottom: 16px;
     font-size: 10px;
@@ -56,7 +55,7 @@ $white-color: rgb(255, 255, 255);
     color: $grey-color;
   }
 
-  &_rating {
+  &__rating {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,7 +63,7 @@ $white-color: rgb(255, 255, 255);
     margin-bottom: 24px;
   }
 
-  &_price {
+  &__price {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,7 +84,7 @@ $white-color: rgb(255, 255, 255);
     }
   }
 
-  &_button {
+  &__button {
     width: 100%;
     height: 40px;
     border: 1px solid $blue-color;
@@ -103,7 +102,7 @@ $white-color: rgb(255, 255, 255);
     }
   }
 
-  &_button:hover {
+  &__button:hover {
     border-radius: 5px;
     background-color: $white-color;
     color: $blue-color;
@@ -113,7 +112,7 @@ $white-color: rgb(255, 255, 255);
 .stars {
   display: flex;
 
-  &_star {
+  &__star {
     display: block;
     width: 16px;
     height: 16px;
@@ -123,15 +122,15 @@ $white-color: rgb(255, 255, 255);
     margin-right: 4px;
   }
 
-  &_star:nth-child(5) {
+  &__star:nth-child(5) {
     margin-right: 0;
   }
 }
 
-.stars--1 .stars_star:nth-child(1),
-.stars--2 .stars_star:nth-child(-n + 2),
-.stars--3 .stars_star:nth-child(-n + 3),
-.stars--4 .stars_star:nth-child(-n + 4),
-.stars--5 .stars_star:nth-child(-n + 5) {
+.stars--1 .stars__star:nth-child(1),
+.stars--2 .stars__star:nth-child(-n + 2),
+.stars--3 .stars__star:nth-child(-n + 3),
+.stars--4 .stars__star:nth-child(-n + 4),
+.stars--5 .stars__star:nth-child(-n + 5) {
   background-image: url(../images/star-active.svg);
 }
